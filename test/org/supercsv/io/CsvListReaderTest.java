@@ -20,7 +20,11 @@ CsvListReader inFile = null;
 
 @Before
 public void setUp() throws Exception {
-	final String str = "a!a,b.b,\"cc,dd\",\r" + "e:e,a@A$\n" + "f;f,g g,h/h\n" + "i'i,\"\"\"hej\"\"\" \n" + ""; // various
+	// a!a,b.b,,"cc,dd","",\r
+	// e:e,a@A$\n
+	// f;f,g g,h/h\n
+	// i'i,"""hej""" \n
+	final String str = "a!a,b.b,,\"cc,dd\",\"\",\r" + "e:e,a@A$\n" + "f;f,g g,h/h\n" + "i'i,\"\"\"hej\"\"\" \n" + ""; // various
 	// sign, "
 	// mac and
 	// pc
@@ -33,10 +37,10 @@ public void testCellprocessor_fail() throws IOException {
 	List<String> l;
 	final StringBuilder sb = new StringBuilder();
 	l = inFile.read(new CellProcessor[] { null });
-	Assert.assertEquals("read 4 columns", 4, l.size());
+	Assert.assertEquals("read 4 columns", 6, l.size());
 	Assert.assertEquals("a", l.get(0));
 	Assert.assertEquals("b.", l.get(1));
-	Assert.assertEquals("cc,dd", l.get(2));
+	Assert.assertEquals(null, l.get(2));
 	Assert.assertEquals("no errors", "", sb.toString());
 }
 
@@ -66,11 +70,12 @@ public void testNewLines() throws IOException {
 @Test
 public void testProcessorRead() throws IOException {
 	List<String> l;
-	l = inFile.read(new CellProcessor[] { new Trim(1), new Trim(2), null, null });
-	Assert.assertEquals("read 4 columns", 4, l.size());
+	l = inFile.read(new CellProcessor[] { new Trim(1), new Trim(2), null, null, null, null });
+	Assert.assertEquals("read 6 columns", 6, l.size());
 	Assert.assertEquals("a", l.get(0));
 	Assert.assertEquals("b.", l.get(1));
-	Assert.assertEquals("cc,dd", l.get(2));
+	Assert.assertEquals(null, l.get(2));
+	Assert.assertEquals("cc,dd", l.get(3));
 	
 	// test input array is cleared after each read
 	l = inFile.read(new CellProcessor[] { new Trim(1), null });
@@ -83,11 +88,13 @@ public void testProcessorRead() throws IOException {
 public void testVariousCharacters() throws IOException {
 	List<String> l;
 	l = inFile.read();
-	Assert.assertEquals("read 4 columns", 4, l.size());
+	Assert.assertEquals("read 6 columns", 6, l.size());
 	Assert.assertEquals("! test", "a!a", l.get(0));
 	Assert.assertEquals(". test", "b.b", l.get(1));
-	Assert.assertEquals("\" test", "cc,dd", l.get(2));
-	Assert.assertEquals("empty test", "", l.get(3));
+	Assert.assertNull("null", l.get(2));
+	Assert.assertEquals("\" test", "cc,dd", l.get(3));
+	Assert.assertEquals("empty string", "", l.get(4));
+	Assert.assertNull("null", l.get(5));
 	
 	l = inFile.read();
 	Assert.assertEquals("read 2 columns", 2, l.size());

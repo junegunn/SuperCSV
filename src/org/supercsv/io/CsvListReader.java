@@ -42,7 +42,7 @@ public List<String> read(final CellProcessor... processors) throws IOException {
 		Util.processStringList(tmpLine, super.line, processors, getLineNumber());
 		final List<String> result = new ArrayList<String>();
 		for( final Object i : tmpLine ) {
-			result.add(i.toString());
+			result.add((i == null) ? null : i.toString());
 		}
 		return result;
 		
