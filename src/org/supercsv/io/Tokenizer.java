@@ -169,6 +169,7 @@ public boolean readStringList(final List<String> result) throws IOException {
 				sb.append('\n');
 				// parse the next line of the file
 				p = -1; // reset delta to point to start of new line (set to
+				pp = -1; // Discards pp from here
 				// -1 as it will be incremented to 0 at the end of
 				// the switch)
 				line = lnr.readLine();

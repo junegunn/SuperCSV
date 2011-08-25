@@ -14,18 +14,26 @@ package org.circulartests;
  * @author Kasper B. Graversen
  */
 public interface CircularData {
-String[] columnsToWrite = { "comma, outside quote", "\"comma, inside quotes\"", // commas
-	"\"quote\" outside quotes", "\"quote \"inside\" quotes\"", // quotes
-	"newline\noutside quotes", "\"newline\ninside quotes\"", // newline
+String[] columnsToWrite = { 
+	"comma, outside quote", 
+	"\"comma, inside quotes\"", // commas
+	"\"quote\" outside quotes", 
+	"\"quote \"inside\" quotes\"", // quotes
+	"newline\noutside quotes",
+	"\"newline\ninside quotes\"", // newline
 	"normal text", // normal
 	" first char is a space", // spacing
 	"17\" monitor", // single quote in string
 	"", // empty
 	null
 };
-String[] expectedReadResultsFromColumnToWrite = { "\"comma, outside quote\"", "\"\"\"comma, inside quotes\"\"\"", // commas
-	"\"\"\"quote\"\" outside quotes\"", "\"\"\"quote \"\"inside\"\" quotes\"\"\"", // quotes
-	"\"newline\noutside quotes\"", "\"\"\"newline\ninside quotes\"\"\"", // newline
+String[] expectedReadResultsFromColumnToWrite = { 
+	"\"comma, outside quote\"", 
+	"\"\"\"comma, inside quotes\"\"\"", // commas
+	"\"\"\"quote\"\" outside quotes\"", 
+	"\"\"\"quote \"\"inside\"\" quotes\"\"\"", // quotes
+	"\"newline\noutside quotes\"", 
+	"\"\"\"newline\ninside quotes\"\"\"", // newline
 	"normal text", // normal
 	"\" first char is a space\"", // spacing
 	"\"17\"\" monitor\"", // single quote
