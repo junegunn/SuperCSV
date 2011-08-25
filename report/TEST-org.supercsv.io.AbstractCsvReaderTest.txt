@@ -1,6 +1,0 @@
-Testsuite: org.supercsv.io.AbstractCsvReaderTest
-Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
-
-Testcase: generalTest took 0.001 sec
-Testcase: headerErrorTest took 0 sec
-Testcase: setInputErrorTest took 0 sec

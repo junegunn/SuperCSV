@@ -47,14 +47,15 @@ public void close() throws IOException {
 protected String escapeString(final String csvElem) {
 	if (csvElem == null) return "";
 
+	final char quote = (char) preference.getQuoteChar();
 	if ( csvElem.length() == 0 ) {
-		return "\"\"";
+		String quoteString = Character.toString(quote);
+		return quoteString + quoteString;
 	}
 	
 	sb.delete(0, sb.length()); // reusing builder object
 	
 	final int delimiter = preference.getDelimiterChar();
-	final char quote = (char) preference.getQuoteChar();
 	final char whiteSpace = ' ';
 	final String EOLSymbols = preference.getEndOfLineSymbols();
 	

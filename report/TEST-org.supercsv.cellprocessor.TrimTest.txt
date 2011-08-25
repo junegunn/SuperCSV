@@ -1,6 +1,0 @@
-Testsuite: org.supercsv.cellprocessor.TrimTest
-Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
-
-Testcase: chainTest took 0 sec
-Testcase: illegal1 took 0 sec
-Testcase: trimTest took 0 sec

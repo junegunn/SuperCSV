@@ -1,9 +1,0 @@
-Testsuite: org.supercsv.io.CsvMapWriterTest
-Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.003 sec
-
-Testcase: writeFailure took 0.001 sec
-Testcase: writeOneCol took 0 sec
-Testcase: writeTwoCol took 0 sec
-Testcase: writeTwoColAndHeader took 0 sec
-Testcase: writeWithProcessors took 0 sec
-Testcase: writeWithProcessors_fail took 0 sec

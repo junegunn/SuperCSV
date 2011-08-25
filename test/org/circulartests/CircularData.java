@@ -20,7 +20,8 @@ String[] columnsToWrite = { "comma, outside quote", "\"comma, inside quotes\"", 
 	"normal text", // normal
 	" first char is a space", // spacing
 	"17\" monitor", // single quote in string
-	"" // empty
+	"", // empty
+	null
 };
 String[] expectedReadResultsFromColumnToWrite = { "\"comma, outside quote\"", "\"\"\"comma, inside quotes\"\"\"", // commas
 	"\"\"\"quote\"\" outside quotes\"", "\"\"\"quote \"\"inside\"\" quotes\"\"\"", // quotes
@@ -28,7 +29,8 @@ String[] expectedReadResultsFromColumnToWrite = { "\"comma, outside quote\"", "\
 	"normal text", // normal
 	"\" first char is a space\"", // spacing
 	"\"17\"\" monitor\"", // single quote
-	"" // empty
+	"\"\"", // empty
+	""
 };
 
 }

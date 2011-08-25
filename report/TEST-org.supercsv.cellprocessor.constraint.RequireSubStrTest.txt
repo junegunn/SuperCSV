@@ -1,6 +1,0 @@
-Testsuite: org.supercsv.cellprocessor.constraint.RequireSubStrTest
-Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.003 sec
-
-Testcase: constructors_should_hande_valid_input took 0.001 sec
-Testcase: should_do_string_containing_substring took 0.001 sec
-Testcase: should_fail_on_missing_string_missing_substring took 0 sec

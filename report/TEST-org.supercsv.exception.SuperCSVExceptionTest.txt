@@ -1,5 +1,0 @@
-Testsuite: org.supercsv.exception.SuperCSVExceptionTest
-Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.001 sec
-
-Testcase: get_should_work took 0 sec
-Testcase: set_should_work took 0 sec

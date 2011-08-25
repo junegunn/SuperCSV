@@ -1,7 +1,0 @@
-Testsuite: org.supercsv.cellprocessor.FmtBoolTest
-Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.006 sec
-
-Testcase: testChaining took 0.001 sec
-Testcase: testGoAndBack took 0.002 sec
-Testcase: testEmptyInput took 0 sec
-Testcase: testInvalidInput took 0 sec

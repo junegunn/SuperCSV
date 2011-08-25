@@ -12,6 +12,6 @@ A fork of SuperCSV project by Kasper B. Graversen.
 
 * Initial fork of the original SuperCSV 1.52
 * build.xml for Apache ant
-* Allows null values to be written. Empty strings are now written as "".
+* Allows null values to be read and written. Empty strings are now written as "".
 * Bug fix: Escaping carriage-return characters.
 

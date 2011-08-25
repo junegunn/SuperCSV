@@ -1,7 +1,0 @@
-Testsuite: org.supercsv.util.MethodCacheTest
-Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.008 sec
-
-Testcase: test_InvalidmethodCall took 0.002 sec
-Testcase: test_Make_Hidden_Abstract_ConstructorTested took 0.002 sec
-Testcase: test_Set_Lookup took 0 sec
-Testcase: testGetLookup took 0 sec

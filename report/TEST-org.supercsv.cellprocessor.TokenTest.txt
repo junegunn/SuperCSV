@@ -1,6 +1,0 @@
-Testsuite: org.supercsv.cellprocessor.TokenTest
-Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
-
-Testcase: testChaining took 0 sec
-Testcase: testChainedConstructon took 0 sec
-Testcase: testConstructon took 0 sec

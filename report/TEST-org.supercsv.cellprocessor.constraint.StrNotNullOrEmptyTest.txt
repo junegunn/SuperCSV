@@ -1,6 +1,0 @@
-Testsuite: org.supercsv.cellprocessor.constraint.StrNotNullOrEmptyTest
-Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
-
-Testcase: testEmptyInput took 0 sec
-Testcase: testValidInput took 0 sec
-Testcase: testNullInput took 0 sec

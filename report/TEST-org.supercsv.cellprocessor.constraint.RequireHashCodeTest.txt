@@ -1,8 +1,0 @@
-Testsuite: org.supercsv.cellprocessor.constraint.RequireHashCodeTest
-Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.007 sec
-
-Testcase: should_succeed_on_valid took 0.002 sec
-Testcase: should_succeed_on_valid_input_in_multiple_set took 0 sec
-Testcase: should_succeed_on_valid_input_in_multiple_set_arr took 0 sec
-Testcase: should_fail_on_wrong_input took 0 sec
-Testcase: should_fail_on_invalid_input took 0 sec

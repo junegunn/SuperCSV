@@ -1,8 +1,0 @@
-Testsuite: org.supercsv.cellprocessor.ParseLongTest
-Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.003 sec
-
-Testcase: testChaining took 0 sec
-Testcase: testEmptyInput took 0 sec
-Testcase: validInputTest took 0 sec
-Testcase: invalid_input took 0 sec
-Testcase: testInValidInput took 0 sec

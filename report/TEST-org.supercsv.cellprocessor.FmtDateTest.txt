@@ -1,8 +1,0 @@
-Testsuite: org.supercsv.cellprocessor.FmtDateTest
-Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.01 sec
-
-Testcase: testChaining took 0.003 sec
-Testcase: testGoAndBack took 0.002 sec
-Testcase: testEmptyInput took 0 sec
-Testcase: testInvalidInput took 0 sec
-Testcase: test_null_Input took 0.001 sec
