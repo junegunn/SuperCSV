@@ -1,0 +1,11 @@
+Testsuite: org.supercsv.io.CsvListWriterTest
+Tests run: 8, Failures: 0, Errors: 0, Time elapsed: 0.017 sec
+
+Testcase: writeFailure took 0 sec
+Testcase: writeNColInklDelimiterAndNewline took 0.001 sec
+Testcase: writeOneCol took 0 sec
+Testcase: writeProcessedData took 0.001 sec
+Testcase: writeTwoCol took 0 sec
+Testcase: writeTwoColList took 0 sec
+Testcase: writeNullEntryAndConvertIt took 0 sec
+Testcase: writeWithProcessor_fail took 0 sec

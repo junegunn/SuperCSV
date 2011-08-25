@@ -1,0 +1,13 @@
+Testsuite: org.supercsv.webtests.PartialReadWriteExamplesTest
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.003 sec
+------------- Standard Output ---------------
+order: 1 product: 22 parent: null
+**
+orderNumber,parentOrder,productNumber,userComment
+1,-1,42,some comment
+2,1,43,""""""
+
+------------- ---------------- ---------------
+
+Testcase: should_partial_read took 0.001 sec
+Testcase: should_partial_write took 0 sec

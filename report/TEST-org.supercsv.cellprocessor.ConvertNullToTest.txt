@@ -1,0 +1,5 @@
+Testsuite: org.supercsv.cellprocessor.ConvertNullToTest
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 0.014 sec
+
+Testcase: should_chain took 0.013 sec
+Testcase: should_handle_stdarg took 0 sec

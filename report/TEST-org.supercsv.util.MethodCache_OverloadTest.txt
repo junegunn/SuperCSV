@@ -1,0 +1,9 @@
+Testsuite: org.supercsv.util.MethodCache_OverloadTest
+Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.004 sec
+
+Testcase: test_Set_Lookup_int_objectType took 0.001 sec
+Testcase: test_Set_Lookup_int_simpleType took 0.001 sec
+Testcase: test_Set_Lookup_long_simpleType took 0 sec
+Testcase: test_Set_Lookup_integer_simpleType took 0 sec
+Testcase: test_Set_Lookup_string took 0 sec
+Testcase: test_Set_Lookup_string_null took 0 sec

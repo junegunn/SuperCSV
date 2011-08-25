@@ -1,0 +1,8 @@
+Testsuite: org.supercsv.cellprocessor.constraint.StrlenTest
+Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.01 sec
+
+Testcase: validInputTest took 0.004 sec
+Testcase: testInValidInput took 0 sec
+Testcase: validChainingTest took 0.001 sec
+Testcase: invalidInputTest took 0 sec
+Testcase: testInValidArrInput took 0 sec

@@ -1,0 +1,4 @@
+Testsuite: org.supercsv.webtests.WriteWebExampleTest
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 0.003 sec
+
+Testcase: testWriting took 0.001 sec

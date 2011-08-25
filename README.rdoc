@@ -1,0 +1,17 @@
+= SuperCSV
+
+A fork of SuperCSV project by Kasper B. Graversen.
+(http://supercsv.sourceforge.net/)
+
+== Build
+  ant dist
+  ant test
+
+== Changelog
+=== 1.53
+
+* Initial fork of the original SuperCSV 1.52
+* build.xml for Apache ant
+* Allows null values to be written. Empty strings are now written as "".
+* Bug fix: Escaping carriage-return characters.
+

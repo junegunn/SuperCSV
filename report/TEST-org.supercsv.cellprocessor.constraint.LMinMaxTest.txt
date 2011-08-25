@@ -1,0 +1,10 @@
+Testsuite: org.supercsv.cellprocessor.constraint.LMinMaxTest
+Tests run: 7, Failures: 0, Errors: 0, Time elapsed: 0.009 sec
+
+Testcase: validInputTest took 0 sec
+Testcase: should_not_allow_non_number took 0.001 sec
+Testcase: invalidmaxInputTest took 0.001 sec
+Testcase: invalidminInputTest took 0 sec
+Testcase: invalidminMaxTest took 0 sec
+Testcase: invalidminMaxTest_c2 took 0 sec
+Testcase: validChainingTest took 0 sec

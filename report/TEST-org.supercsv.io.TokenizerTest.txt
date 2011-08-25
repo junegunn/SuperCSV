@@ -1,0 +1,17 @@
+Testsuite: org.supercsv.io.TokenizerTest
+Tests run: 14, Failures: 0, Errors: 0, Time elapsed: 0.008 sec
+
+Testcase: headerFile_emptyValue took 0 sec
+Testcase: inputOneRow_2_quote took 0 sec
+Testcase: inputOneRow_2_quote_inside_quote took 0 sec
+Testcase: inputOneRow_2_quote_outside_quote took 0 sec
+Testcase: inputOneRow_4_quote took 0 sec
+Testcase: inputOneRow_empty took 0 sec
+Testcase: inputOneRow_should_not_strim_spaces_before_and_after took 0.001 sec
+Testcase: inputOneRow_should_not_trim_spaces_between_words took 0 sec
+Testcase: inputOneRow_should_not_trim_tabs_before_and_after took 0 sec
+Testcase: inputOneRow_should_trim_spaces_before_and_after took 0.001 sec
+Testcase: inputOneRow_value took 0 sec
+Testcase: inputOneRow_value_missing_end_quote took 0 sec
+Testcase: inputOneRow_value_newline took 0 sec
+Testcase: valueInHeaderFile took 0 sec

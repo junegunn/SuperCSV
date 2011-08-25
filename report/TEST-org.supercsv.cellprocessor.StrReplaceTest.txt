@@ -1,0 +1,7 @@
+Testsuite: org.supercsv.cellprocessor.StrReplaceTest
+Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+
+Testcase: should_fail_no_effect took 0 sec
+Testcase: should_fail_null took 0 sec
+Testcase: should_fail_secondarg_null took 0 sec
+Testcase: should_replace took 0 sec

@@ -1,0 +1,9 @@
+Testsuite: org.supercsv.cellprocessor.constraint.DMinMaxTest
+Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.008 sec
+
+Testcase: should_fail_on_out_of_range_input took 0.003 sec
+Testcase: should_have_chaining_working took 0 sec
+Testcase: shouldFailMaxLessThanMin took 0 sec
+Testcase: shouldWork took 0 sec
+Testcase: shouldWorkWithFineArguments took 0 sec
+Testcase: should_not_allow_non_number took 0 sec

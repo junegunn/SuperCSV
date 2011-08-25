@@ -1,0 +1,8 @@
+Testsuite: org.supercsv.cellprocessor.HashMapperTest
+Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+
+Testcase: testChaining took 0.001 sec
+Testcase: testValidInput took 0 sec
+Testcase: testNotFoundInput took 0 sec
+Testcase: testNotFoundButDefaultInput took 0 sec
+Testcase: testNullInput took 0.001 sec

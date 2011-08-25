@@ -1,0 +1,9 @@
+Testsuite: org.supercsv.io.AbstractCSVWriterTest
+Tests run: 1, Failures: 1, Errors: 0, Time elapsed: 0.004 sec
+
+Testcase: should_escape took 0.001 sec
+	FAILED
+expected:<[]> but was:<[""]>
+junit.framework.AssertionFailedError: expected:<[]> but was:<[""]>
+	at org.supercsv.io.AbstractCSVWriterTest.should_escape(Unknown Source)
+

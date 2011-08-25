@@ -1,0 +1,7 @@
+Testsuite: org.supercsv.io.CsvBeanWriterTest
+Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.005 sec
+
+Testcase: testFail took 0.001 sec
+Testcase: testWrite took 0 sec
+Testcase: testWriteEncode took 0.001 sec
+Testcase: testWriteProcessor took 0 sec

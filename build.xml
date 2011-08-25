@@ -1,0 +1,60 @@
+<project name="SuperCSV" default="dist" basedir=".">
+	<property name="version" value="1.53"/>
+
+	<property name="jar" value="SuperCSV-${version}.jar"/>
+	<property name="src" location="src"/>
+	<property name="test" location="test"/>
+	<property name="build" location="build"/>
+	<property name="report" location="report"/>
+	<property name="test_build" location="test_build"/>
+
+	<target name="compile">
+		<mkdir dir="${build}"/>
+		<javac srcdir="${src}" destdir="${build}">
+			<classpath>
+				<pathelement location="lib/spiffy-all-0.05.jar"/>
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="test" depends="dist">
+		<mkdir dir="${test_build}"/>
+		<javac srcdir="${test}" destdir="${test_build}">
+			<classpath>
+				<pathelement location="lib/spiffy-all-0.05.jar"/>
+				<pathelement location="lib/junit-4.9.jar"/>
+				<pathelement location="${jar}"/>
+			</classpath>
+			<compilerarg value="-Xlint"/>
+		</javac>
+
+		<delete dir="${report}"/>
+		<mkdir dir="${report}"/>
+		<junit>
+			<formatter type="plain"/>
+			<classpath>
+				<pathelement location="${test_build}"/>
+				<pathelement location="${jar}"/>
+				<pathelement location="lib/spiffy-all-0.05.jar"/>
+				<pathelement location="lib/junit-4.9.jar"/>
+			</classpath>
+			<batchtest todir="${report}">
+				<fileset dir="${test_build}" includes="**/*Test.class"/>
+			</batchtest>
+		</junit>
+	</target>
+
+	<target name="dist" depends="compile">
+		<delete file="MANIFEST.MF"/>
+		<manifest file="MANIFEST.MF">
+			<attribute name="Built-By" value="${user.name}"/>
+		</manifest>
+		<jar jarfile="${jar}" basedir="${build}" manifest="MANIFEST.MF"/>
+	</target>
+
+	<target name="clean">
+		<delete file="MANIFEST.MF"/>
+		<delete dir="${build}"/>
+		<delete dir="${test_build}"/>
+	</target>
+</project>

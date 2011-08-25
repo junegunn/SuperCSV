@@ -1,0 +1,7 @@
+Testsuite: org.supercsv.cellprocessor.constraint.IsIncludedInTest
+Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.002 sec
+
+Testcase: testChaining took 0 sec
+Testcase: testInvalidInput took 0 sec
+Testcase: testValidInput took 0 sec
+Testcase: testNullInput took 0 sec

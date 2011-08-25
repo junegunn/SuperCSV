@@ -1,0 +1,7 @@
+Testsuite: org.supercsv.cellprocessor.ParseCharTest
+Tests run: 4, Failures: 0, Errors: 0, Time elapsed: 0.009 sec
+
+Testcase: should_handle_long_strings_as_invalid took 0.002 sec
+Testcase: should_only_accept_strings_and_char took 0 sec
+Testcase: test_valid_input_char took 0 sec
+Testcase: test_valid_input_string took 0 sec

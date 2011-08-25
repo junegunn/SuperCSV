@@ -1,0 +1,11 @@
+Testsuite: org.circulartests.WriteReadTest
+Tests run: 1, Failures: 1, Errors: 0, Time elapsed: 0.05 sec
+
+Testcase: should_handle_all_cases_of_writing_and_reading_special_chars took 0.029 sec
+	FAILED
+arrays first differed at element [5]; expected:<"newline
+inside quotes"> but was:<null>
+junit.framework.AssertionFailedError: arrays first differed at element [5]; expected:<"newline
+inside quotes"> but was:<null>
+	at org.circulartests.WriteReadTest.should_handle_all_cases_of_writing_and_reading_special_chars(Unknown Source)
+
