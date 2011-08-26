@@ -74,27 +74,24 @@ protected String escapeString(final String csvElem) {
 			needForEscape = true;
 			sb.append(c);
 		}
-		else
-			if( c == quote ) {
-				// if its the first character, escape it and set need for space
-				if( i == 0 ) {
-					sb.append(quote);
-					sb.append(quote);
-					needForEscape = true;
-				}
-				else {
-					sb.append(quote);
-					sb.append(quote);
-					needForEscape = true; // TODO review comments above
-				}
+		else if( c == quote ) {
+			// if its the first character, escape it and set need for space
+			if( i == 0 ) {
+				sb.append(quote);
+				sb.append(quote);
+				needForEscape = true;
+			} else {
+				sb.append(quote);
+				sb.append(quote);
+				needForEscape = true; // TODO review comments above
 			}
-			else {
-				// We need to preserve the original character
-				if ( c == '\n' || c == '\r' )
-					needForEscape = true;
+		} else {
+			// We need to preserve the original character
+			if ( c == '\n' || c == '\r' )
+				needForEscape = true;
 
-				sb.append(c);
-			}
+			sb.append(c);
+		}
 	}
 	
 	// if element contains a newline (mac,windows or linux), escape the
@@ -102,9 +99,7 @@ protected String escapeString(final String csvElem) {
 	if( needForEscape ) {
 		return quote + sb.toString() + quote;
 	}
-	
 	return sb.toString();
-	
 }
 
 /**
