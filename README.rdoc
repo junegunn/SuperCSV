@@ -1,7 +1,7 @@
 = SuperCSV
 
 A fork of SuperCSV project by Kasper B. Graversen.
-(http://supercsv.sourceforge.net/)
+(https://github.com/super-csv/super-csv)
 
 == Build
   ant dist
